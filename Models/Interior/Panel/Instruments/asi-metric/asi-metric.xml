@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>asi-metric.ac</path>
+ 
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>Face</object-name>
+    <object-name>cache</object-name>
+    <object-name>Needle</object-name>
+   
+    <object-name>vitre</object-name>
+  </animation>
+ 
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+ 
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+ 
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>cache</object-name>
+    <object-name>Needle</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission> 
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Needle</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <min>  25 </min>
+    <max> 539 </max>
+    <scale> 1 </scale>
+    <interpolation>
+      <entry><ind>  25 </ind><dep>   3 </dep></entry>
+      <entry><ind> 107 </ind><dep>  30 </dep></entry>
+      <entry><ind> 130 </ind><dep>  45 </dep></entry>
+      <entry><ind> 190 </ind><dep>  90 </dep></entry>
+      <entry><ind> 300 </ind><dep> 180 </dep></entry>
+      <entry><ind> 430 </ind><dep> 270 </dep></entry>
+      <entry><ind> 530 </ind><dep> 355 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

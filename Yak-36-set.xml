@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!-- <PropertyList include="Yak-36-jsbsim-cnf.xml"> -->
+<PropertyList include="Yak-36-yasim-cnf.xml">
+
+  <sim>
+    <description>Yakovlev Yak-36</description>
+    <author>Pierre Duval</author>
+
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 3 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
+  </sim>
+
+</PropertyList>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>cotes</object-name>
+    <object-name>LP</object-name>
+    <object-name>PBF</object-name>
+    <object-name>PBR</object-name>
+    <object-name>RP</object-name>
+    <object-name>cache</object-name>
+    <object-name>dessus</object-name>
+    <object-name>ajout</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intGlassF</object-name>
+    <object-name>intGlassMov</object-name>
+  </animation>
+
+  <!-- Panel -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -3.206 </x-m>
+      <y-m> -0.071 </y-m>
+      <z-m>  0.819 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- PilotSeat -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/PilotSeat/PilotSeat.xml</path>
+    <offsets>
+      <x-m> -2.482 </x-m>
+      <y-m> -0.002 </y-m>
+      <z-m>  0.840 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pilot -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.60117 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.66124 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Stick/Stick.xml</path>
+    <offsets>
+      <x-m> -3.005 </x-m>
+      <y-m> -0.001 </y-m>
+      <z-m>  0.542 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Pedals -->	
+  <animation>
+    <type>translate</type>
+    <object-name>LP</object-name>
+    <property>controls/flight/rudder[0]</property>
+    <factor>0.06</factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RP</object-name>
+    <property>controls/flight/rudder[0]</property>
+    <factor>0.06</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>PBF</object-name>   
+    <property>controls/flight/rudder[0]</property>
+    <factor>16.7</factor>
+    <center>
+      <x-m> -3.433 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.285 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>PBR</object-name>   
+    <property>controls/flight/rudder[0]</property>
+    <factor>16.7</factor>
+    <center>
+      <x-m> -3.377 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.285 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <!-- Canopy -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intGlassMov</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor>-90</factor>
+    <axis>
+      <x1-m> -2.733 </x1-m>
+      <y1-m>  0.413 </y1-m>
+      <z1-m>  0.840 </z1-m>
+      <x2-m> -2.033 </x2-m>
+      <y2-m>  0.413 </y2-m>
+      <z2-m>  0.859 </z2-m>
+    </axis>
+  </animation>
+  
+</PropertyList>
