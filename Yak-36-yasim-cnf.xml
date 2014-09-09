@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!--
+************************************************************************
+Yakovlev Yak-36
+December 2012 Pierre Duval
+************************************************************************
+-->
+
+<PropertyList include="Yak-36-base.xml">
+
+  <sim>
+
+    <description>Yakovlev Yak-36 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>Yak-36-yasim</aero>
+
+  </sim>
+    
+</PropertyList>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+ 
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m> -0.021 </y-m>
+      <z-m> -0.043 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ADF -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/ADF/adf.xml</path>
+    <offsets>
+      <x-m>  0.008 </x-m>
+      <y-m>  0.131 </y-m>
+      <z-m> -0.061 </z-m>
+    </offsets>
+  </model>
+ 
+ <!-- hi -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/hi/hi.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.131 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- alt-metric -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/alt-metric/alt-metric.xml</path>
+    <offsets>
+      <x-m>  0.006 </x-m>
+      <y-m> -0.152 </y-m>
+      <z-m>  0.044 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- asi-metric -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/asi-metric/asi-metric.xml</path>
+    <offsets>
+      <x-m>  0.006 </x-m>
+      <y-m>  0.234 </y-m>
+      <z-m> -0.058 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.029 </x-m>
+      <y-m>  0.027 </y-m>
+      <z-m>  0.108 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Nozzles rotation indicator -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/nri/nri.xml</path>
+    <offsets>
+      <x-m> -0.028 </x-m>
+      <y-m> -0.068 </y-m>
+      <z-m>  0.108 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- n1 -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/n1/n1-0.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.131 </y-m>
+      <z-m> -0.177 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/n1/n1-1.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.235 </y-m>
+      <z-m> -0.177 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- clock -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.006 </x-m>
+      <y-m>  0.336 </y-m>
+      <z-m> -0.060 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- rpm -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.161 </y-m>
+      <z-m> -0.061 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- egt -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.242 </y-m>
+      <z-m>  0.063 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Turn -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
+    <offsets>
+      <x-m>  0.011 </x-m>
+      <y-m> -0.161 </y-m>
+      <z-m> -0.171 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- flaps -->
+  <model>
+    <path>Aircraft/Yak-36/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.021 </y-m>
+      <z-m> -0.177 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>

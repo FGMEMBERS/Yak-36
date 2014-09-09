@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>Pierre Duval (3D)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>0.8</fuel-fraction>
+  
+    <startup>
+      <splash-texture>Aircraft/Yak-36/Yak-36-splash.png</splash-texture>
+    </startup>
+	
+	<model>
+      <path>Aircraft/Yak-36/Models/Yak-36.xml</path>	
+    </model>
+	
+    <sound>
+      <path>Aircraft/Yak-36/Sounds/Yak-36-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                      <!-- 0 immat -->
+        <int type="int" n="1">  0 </int>                                      <!-- 1 immat -->
+        <int type="int" n="2">  0 </int>                                      <!-- 2 immat -->
+        <int type="int" n="3">  0 </int>                                      <!-- 3 immat -->
+        <int type="int" n="4">  0 </int>                                      <!-- 4 immat -->
+        <int type="int" n="5">  0 </int>                                      <!-- 5 immat -->
+        <int type="bool" n="6"> 1 </int>                                      <!-- 6 smoke/bomb/torpedo -->
+        <int type="int" n="7">  0 </int>                                      <!-- 7 color -->
+        <int n="8" alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!-- 8 nav-lights -->
+        <int n="9" alias="/sim/model/lights/beacon/state">  false </int>      <!-- 9 strobe-lights -->
+        <int n="10" alias="/controls/electric/key-pos">  0 </int>             <!-- 10 key position -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>  
+        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
+        <string n="9" type="string" />                                        <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Yak-36</title>
+      <key>
+        <name>m/M</name>
+        <desc>M/Down m/UP_Engines nozzles rotation</desc>
+      </key>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <text>
+        ______Quick start______
+        ____CTOL_Conventional take-off and landing____
+        Check the parking brake is off. Then throttle to 75%. Once you've reached 150,start piching-up. If the runway is too short you can throttle to 100% to take-off safely. For making a smooth landing, reduce speed to 120 then pull back the stick a little bit when you're 10ft altitude so as the rear wheel can touch down first.
+        _____ VTOL_Vertical Take Off and landing_____
+        Rotate the nozzles to 80 degrees and keep an eye on the NRI-Nozzle rotation indicator. Throttle to 70%. When you're at 80Ft or more,start decreasing the nozzles step by step to 0 degree and at the same time stabilize the airplane by piching up and down.To make a safe transition from CTOL to a VTOL state you need to develop your skills a bit more: When you're at 400FT altitude reduce throttle to 50%. Here you can rotate the nozzles to 95% to slow down the horizontal speed and to keep  airplane in the air. Speed reduced to 20, decrease the rotation to 85% and throttle-down step by step to land safely.This last manoeuvre is the most difficult one as you have to keep stabilizing the airplane all the time.
+      </text>	  
+    </help>
+
+    <menubar include="Dialogs/Yak-36-menu.xml"/>
+
+  </sim>
+  
+  <engines>
+    <engine n="0">
+      <rpm>1000</rpm>
+      <reverser-position type="double">0.000000</reverser-position>
+    </engine>
+    <engine n="1">
+      <rpm>1000</rpm>
+      <reverser-position type="double">0.000000</reverser-position>
+    </engine>
+  </engines>
+  
+  <engines>
+    <engine n="0">
+      <fuel-flow-pph type="float">0.0</fuel-flow-pph>
+      <n1-actual type="float">0.0</n1-actual>
+      <n2-actual type="float">0.0</n2-actual>
+      <state type="int">0</state>
+    </engine>
+    <engine n="1">
+      <fuel-flow-pph type="float">0.0</fuel-flow-pph>
+      <n1-actual type="float">0.0</n1-actual>
+      <n2-actual type="float">0.0</n2-actual>
+      <state type="int">0</state>
+    </engine>
+  </engines>
+
+  <surface-positions>
+    <wing-fold-pos-norm alias="/instrumentation/doors/wings/position-norm" />
+  </surface-positions>
+  
+  <input>
+    <keyboard include="Nasal/Yak-36-keyboard.xml"/>
+  </input>
+  
+  <instrumentation>
+    <wxradar>
+      <serviceable>true</serviceable>
+      <range type="int" archive="y">20</range>
+      <minimized type="bool" archive="y">false</minimized>
+      <switch archive="y">on</switch>
+      <mode archive="y">wx</mode>
+      <lightning type="bool" archive="y">true</lightning>
+      <display-mode archive="y">arc</display-mode>
+    </wxradar>
+    <radar>
+      <range type="int" archive="y">20</range>
+    </radar>
+  </instrumentation>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <rpm>500</rpm>
+      <running>false</running>
+    </engine>
+  </engines>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/Yak-36/Nasal/doors.nas</file>
+    </doors>
+    <yak36>
+      <file>Aircraft/Yak-36//Nasal/light.nas</file>
+      <file>Aircraft/Yak-36/Nasal/liveries.nas</file>
+    </yak36>
+  </nasal>
+
+</PropertyList>
