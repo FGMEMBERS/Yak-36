@@ -1,4 +1,4 @@
-﻿Yakovlev_Yak-36.
+Yakovlev_Yak-36.
 
 
 The global growing presence of the US navy in many parts of the world has urged the soviet governement to develop its navy's capabilities to oppose the american
