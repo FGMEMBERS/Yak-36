@@ -13,6 +13,19 @@
       <cockpit type="int"> 3 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+        <tags>
+      <tag>yakovlev</tag>
+      <tag>mid-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>jet</tag>
+      <tag>vtol</tag>
+      <tag>fighter</tag>
+      <tag>prototype</tag>
+      <tag>1960s</tag>
+    </tags>
     
   </sim>
 
